@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="CALCULADORA CSS.css">
+</head>
+<body>
+
+    <div id="conatiner">
+
+        <h1>ALEF KAIQUE</h1>
+
+        <div id="calculadora">
+            <h1>Calculadora</h1>
+            <p id="result"></p>
+            <table>
+                <tr>
+                    <td  class="botao" onclick="clean()">C</td>
+                    <td  class="botao" onclick="apagar()"><</td>
+                    <td  class="botao" onclick="insert('/')">/</td>
+                    <td  class="botao" onclick="insert('*')">x</td>
+                </tr>
+
+                <tr>
+                    <td  class="botao" onclick="insert('7')">7</td>
+                    <td  class="botao" onclick="insert('8')">8</td>
+                    <td  class="botao" onclick="insert('9')">9</td>
+                    <td  class="botao" onclick="insert('-')">-</td>
+                </tr>
+
+                <tr>
+                    <td  class="botao" onclick="insert('4')">4</td>
+                    <td  class="botao" onclick="insert('5')">5</td>
+                    <td  class="botao" onclick="insert('6')">6</td>
+                    <td  class="botao" onclick="insert('+')">+</td>
+                </tr>
+
+                <tr>
+                    <td  class="botao" onclick="insert('1')">1</td>
+                    <td  class="botao" onclick="insert('2')">2</td>
+                    <td  class="botao" onclick="insert('3')">3</td>
+                    <td rowspan="2" class="botao" style="height: 106px" onclick="calcular()">=</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="botao" style="width: 106px" onclick="insert('0')">0</td>
+                    <td  class="botao" onclick="insert('.')">.</td>
+                </tr>
+
+            </table>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="CALCULADORAjs.js"></script>
+    
+</body>
+</html>
